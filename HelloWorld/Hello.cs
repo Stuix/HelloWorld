@@ -6,7 +6,17 @@ namespace HelloWorld
 {
     public class Hello
     {
-        public string Name { get; set; }
+        private string Greeting;
 
+        public Hello(string greeting)
+        {
+            this.Greeting = greeting;
+            
+        }
+
+        public void sayHello()
+        {
+            Console.WriteLine(Greeting);
+        }
     }
 }
